@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reasons I Love You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="floating-hearts" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <button class="music-toggle" type="button" aria-label="Toggle music">
+      <span class="music-icon">♪</span>
+    </button>
+
+    <main class="screen">
+      <p class="eyebrow">Chapter 2</p>
+      <h1>Reasons I keep choosing you</h1>
+      <p class="lead">Tap each heart to reveal one more little truth.</p>
+
+      <section class="reason-list" aria-label="Reasons">
+        <button class="reason-heart" type="button" data-message="You make even quiet days feel special.">♥</button>
+        <button class="reason-heart" type="button" data-message="You understand parts of me I never knew how to explain.">♥</button>
+        <button class="reason-heart" type="button" data-message="You are my peace, my excitement, and my favorite thought.">♥</button>
+        <button class="reason-heart" type="button" data-message="Loving you feels like coming home.">♥</button>
+      </section>
+
+      <p class="revealed-message" aria-live="polite">Choose a heart, my love.</p>
+
+      <nav class="page-nav" aria-label="Page navigation">
+        <a href="memories.html" class="secondary-link page-link">Back</a>
+        <a href="surprise.html" class="primary-link page-link">Final surprise</a>
+      </nav>
+    </main>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/love-theme.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>

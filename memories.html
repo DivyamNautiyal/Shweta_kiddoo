@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Sweet Memories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="floating-hearts" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <button class="music-toggle" type="button" aria-label="Toggle music">
+      <span class="music-icon">♪</span>
+    </button>
+
+    <main class="screen">
+      <p class="eyebrow">Chapter 1</p>
+      <h1>Little things I adore</h1>
+      <p class="lead">Every ordinary moment feels brighter when it has you in it.</p>
+
+      <section class="memory-grid" aria-label="Sweet memories">
+        <article class="memory-card">
+          <span>01</span>
+          <h2>Your smile</h2>
+          <p>The kind that makes a whole day feel soft around the edges.</p>
+        </article>
+        <article class="memory-card">
+          <span>02</span>
+          <h2>Your voice</h2>
+          <p>My favorite sound, whether you are laughing or telling me everything.</p>
+        </article>
+        <article class="memory-card">
+          <span>03</span>
+          <h2>Your heart</h2>
+          <p>Gentle, warm, and somehow more magical every time I notice it.</p>
+        </article>
+      </section>
+
+      <nav class="page-nav" aria-label="Page navigation">
+        <a href="index.html" class="secondary-link page-link">Back</a>
+        <a href="reasons.html" class="primary-link page-link">Next</a>
+      </nav>
+    </main>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/love-theme.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
